@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+ <title>WhatYouVisit Demo</title>
+ <script type="text/javascript" src="whatyouvisit.js"></script>
+</head>
+
+<body>
+ <h1>WhatYouVisit</h1>
+ <p><a href="http://github.com/BryanH/whatyouvisit">Project Home</a></p>
+ <script type="text/javascript">
+ /*<![CDATA[*/
+  var more = {
+   "Humanized": "http://humanized.com",
+   "Azarask.in": ["http://azarask.in", "http://azarask.in/blog"]
+  };
+
+  var s = WhatYouVisit( more );
+  document.write( "<p><strong>Visited Sites:<\/strong> " + s.visitedSites() + "<\/p>" );
+  document.write( "<p><strong>Visits Digg?<\/strong> " + s.doesVisit( "Digg" ) + "<\/p>" );
+  document.write( "<p><strong>Visits Moon?<\/strong> " + s.doesVisit( "Moon" ) + "<\/p>" );
+  document.write( "<p><strong>All checked sites:<\/strong> " + s.checkedSites( ) + "<\/p>" );
+ /*]]>*/
+ </script>
+</body>
+</html>
+
